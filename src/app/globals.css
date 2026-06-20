@@ -818,19 +818,17 @@ footer {
   .timeline::before {
     left: 24px;
   }
-  .timeline-item {
+  .timeline-item,
+  .timeline > div:nth-child(even) .timeline-item {
     justify-content: flex-start;
     padding-right: 0;
-    padding-left: 48px;
-  }
-  .timeline-item:nth-child(even) {
     padding-left: 48px;
   }
   .timeline-dot {
     left: 24px;
   }
-  .timeline-item:nth-child(odd) .timeline-content,
-  .timeline-item:nth-child(even) .timeline-content {
+  .timeline > div:nth-child(odd) .timeline-content,
+  .timeline > div:nth-child(even) .timeline-content {
     margin: 0;
     width: 100%;
   }
